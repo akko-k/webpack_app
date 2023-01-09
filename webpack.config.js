@@ -3,6 +3,11 @@
 module.exports = {
   mode: "development",
   devtool: "source-map",
+  devServer: {
+    static: {
+      directory: "./dist",
+    },
+  },
   module: {
     rules: [
       {
