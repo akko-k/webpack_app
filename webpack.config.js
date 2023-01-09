@@ -1,6 +1,7 @@
 /** ↓ エディタで補完を効かせるための JSDoc */
 /** @type {import('webpack').Configuration} */
 module.exports = {
+  mode: "development",
   module: {
     rules: [
       {
