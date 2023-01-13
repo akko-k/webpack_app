@@ -20,6 +20,10 @@ module.exports = {
         // ローダーの指定
         loader: "babel-loader",
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
 };
