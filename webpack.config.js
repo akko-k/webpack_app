@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 /** @type {import('webpack').Configuration} */
 module.exports = {
   resolve: {
-    extensions: [".js", ".json", ".jsx"],
+    extensions: [".js", ".json", ".jsx", ".ts", ".tsx"],
   },
   entry: "./src/main.jsx",
   mode: "development",
@@ -16,10 +16,9 @@ module.exports = {
   module: {
     rules: [
       {
-        // 拡張子 js のファイル（正規表現）
-        test: /\.jsx$/,
+        test: /\.tsx$/,
         // ローダーの指定
-        loader: "babel-loader",
+        loader: "ts-loader",
       },
       {
         test: /\.s?css$/,
