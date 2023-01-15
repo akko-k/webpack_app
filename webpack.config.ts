@@ -5,7 +5,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".json", ".jsx", ".ts", ".tsx"],
   },
-  entry: "./src/main.jsx",
+  entry: "./src/main.tsx",
   mode: "development",
   devtool: "source-map",
   devServer: {
